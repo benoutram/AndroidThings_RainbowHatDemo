@@ -2,7 +2,6 @@ apply plugin: 'com.android.application'
 
 android {
     compileSdkVersion 25
-    buildToolsVersion "25.0.2"
     defaultConfig {
         applicationId "things.wolfsoft.com.androidthings"
         minSdkVersion 24
@@ -25,7 +24,7 @@ dependencies {
         exclude group: 'com.android.support', module: 'support-annotations'
     })
     compile 'com.android.support:appcompat-v7:25.2.0'
-    compile 'com.android.support.constraint:constraint-layout:1.0.0-beta4'
+    compile 'com.android.support.constraint:constraint-layout:1.0.2'
     compile 'com.google.android.things.contrib:driver-button:0.3'
     compile 'com.google.android.things.contrib:driver-bmx280:0.2'
     compile 'com.google.android.things.contrib:driver-ht16k33:0.3'
@@ -33,5 +32,5 @@ dependencies {
     compile 'com.google.android.things.contrib:driver-pwmspeaker:0.2'
 
     testCompile 'junit:junit:4.12'
-    provided 'com.google.android.things:androidthings:0.4-devpreview'
+    provided 'com.google.android.things:androidthings:0.5.1-devpreview'
 }
